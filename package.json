@@ -1,0 +1,42 @@
+{
+  "name": "inline-component",
+  "version": "0.0.1",
+  "description": "A component for prototyping components",
+  "main": "dist/inline-component.cjs.js",
+  "module": "dist/inline-component.esm.js",
+  "browser": "dist/inline-component.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "npm run build"
+  },
+  "author": "Michael Chan (@chantastic)",
+  "license": "MIT",
+  "homepage": "https://github.com/learnreact/inline-component",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/learnreact/inline-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/learnreact/inline-component/issues"
+  },
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "dependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "rollup": "^0.43.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-watch": "^4.0.0"
+  }
+}
